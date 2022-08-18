@@ -1,0 +1,20 @@
+package aula04;
+
+import java.util.Scanner;
+
+public class ExercicioAula4Repeticao {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Digite um nome: ");
+		String nome = input.next();
+		System.out.println("Entre com um Número");
+		int numero = input.nextInt();
+		for(numero = 0; numero >= numero; numero++) {
+			System.out.println(numero + nome);
+		}
+		
+
+	}
+
+}

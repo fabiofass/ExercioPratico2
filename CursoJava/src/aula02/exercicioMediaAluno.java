@@ -1,0 +1,29 @@
+package aula02;
+
+import java.util.Scanner;
+
+public class exercicioMediaAluno {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		System.out.println("Entre com a nota 1: ");
+		float nota1 = input.nextFloat();
+	    System.out.println("Entre com a nota 2: ");
+		float nota2 = input.nextFloat();
+		float media = (nota1 + nota2) /2;
+		
+		if (media <= 4){
+		System.out.println("Reprovado");
+		}else if(media <= 6) {
+			System.out.println("Recuperação");
+		}else if(media <= 8) {
+			System.out.println("Aprovado");
+		}else if(media <= 10) {
+			System.out.println("Destaque");
+		}
+		input.close();
+		
+
+	}
+
+}

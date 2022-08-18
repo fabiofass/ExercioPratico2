@@ -1,0 +1,34 @@
+package ExercicioPratico2;
+
+import java.util.Scanner;
+
+public class MercadinhoFucturaTeste01 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		double Banana = 4.50;
+		double Maca = 3.00;
+		double Melao = 6.45;
+		double Goiaba = 2.90;
+		double Mamao = 3.50;
+
+		System.out.println(
+				"Produtos Registrados: \n 1 - Banana = Kg R$4,50 - Caixa 2.10Kg\n 2 - Maçã = Kg R$3,00 - Caixa 0.95Kg\n 3 - Melão = Kg R$6,45 - Caixa 2.50Kg\n 4 - Goiaba = Kg R$2,95 - Caixa 1.65Kg\n 5 - Mamão = Kg R$3,50 - Caixa 2.45Kg");
+
+		System.out.println("Digite a quantidade de caixas desejadas:");
+		int contador2 = input.nextInt();
+		System.out.println("Bananas - Qt desejada: "+ contador2+"\nMaçã  - Qt desejada:"+contador2+"\nMelão - Qt desejada:"+contador2+"\nGoiaba - Qt desejada:"+contador2+"\nMamão - Qt desejada:"+contador2);
+		for (int contador = 1; contador <= contador2; contador++) {
+			double precoTotal = ((Banana * 2.10) + (Maca * 0.95) + (Melao * 2.50) + (Goiaba * 1.65) + (Mamao * 2.45))
+					* contador;
+			if (contador == contador2) {
+				System.out.printf("preço por produt"+ (Banana*2.10)* contador);
+				System.out.printf("Preço Total dos Produtos:  R$ %.2f \n ", precoTotal);
+				
+			}
+
+		}
+
+	}
+}

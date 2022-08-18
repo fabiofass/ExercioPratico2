@@ -1,0 +1,33 @@
+package aula04;
+
+import java.util.Scanner;
+
+public class ExercicioAula4Repeticao {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Digite um nome: ");
+		String nome = input.next();
+		System.out.println("Entre com um Número");
+		int numero = input.nextInt();
+		for(int numero2 = 1; numero2 <= numero; numero2++) {
+			System.out.println(numero2 + " - "+ nome);
+			
+			System.out.println("________while__________");
+			
+			System.out.println("Digite um 2º Nome");
+			String nome2 = input.next();
+			System.out.println("Digite o 2º Número");
+			int valor2 = input.nextInt();
+		
+			while(valor2 <= 5) {
+				valor2++;
+				System.out.println(valor2 + nome);
+			}
+			
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package aula05;
+
+public class Arreys {
+
+	public static void main(String[] args) {
+		int[] vetor = new int [5];
+		System.out.println(vetor);
+
+	}
+
+}
